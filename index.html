@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="move_background.js"></script>
+    <link type="text/css" rel="stylesheet" href="move_background.css">
+  </head>
+  <body>
+    <header>
+      <h1>moveBackground jQuery plugin</h1>
+      <h4>Just move the mouse over 'Section reference' divs</h4>
+      <code>/**@param tg = target mouse moving*/</code><br><code>/**@Param rz = motion reason*/</code><br><code>/**@param lf = offset izquierdo*/</code><br>
+      <br><code>moveBackground: function(tg, rz, lf)</code>
+    </header>
+    
+    <hr>
+    <h3>$("#section_to_move1").moveBackground("#section_reference1",5 ,10);</h3>
+    <div id="section_reference1"  class="section-reference">
+      <div id="background" class="section">
+        <h2>Section reference</h2>
+      </div>
+      <div id="section_to_move1" class="section section-to-move">
+        <h2>moved section</h2>
+      </div>  
+    </div>
+    
+    <hr>
+    <h3>$("#section_to_move2").moveBackground("#section_reference2",5 ,100);</h3>
+    <div id="section_reference2"   class="section-reference">
+      <div id="background" class="section">
+        <h2>Section reference</h2>
+        <h3></h3>
+      </div>
+      <div id="section_to_move2" class="section section-to-move">
+        <h2>moved section</h2>
+      </div>  
+    </div>
+    
+    <hr>
+    <h3>$("#section_to_move3").moveBackground("#section_reference3",10 ,10);</h3>
+    <div id="section_reference3" class="section-reference">
+      <div id="background" class="section"><h2>Section reference</h2></div>
+      <div id="section_to_move3" class="section section-to-move">
+        <h2>moved section</h2>
+      </div>  
+    </div>
+
+    <hr>
+    <h3>$("#section_to_move4").moveBackground("#section_reference4",20 ,100);</h3>
+      <h3>$("#background2").moveBackground("#section_reference4",15 ,0);</h3>
+    <div id="section_reference4" class="section-reference">
+      <div id="background2" class="section section-to-move"><h2>Section reference id=background2</h2></div>
+      <div id="section_to_move4" class="section section-to-move">
+        <h2>moved section id=section_to_move4</h2>
+      </div>  
+    </div>
+    
+    <script type="text/javascript">
+      $("#section_to_move1").moveBackground("#section_reference1",5 ,10);
+      $("#section_to_move2").moveBackground("#section_reference2",5 ,100);
+      $("#section_to_move3").moveBackground("#section_reference3",25 ,100);
+      
+      $("#section_to_move4").moveBackground("#section_reference4",20 ,100);
+      $("#background2").moveBackground("#section_reference4",15 ,0);
+    </script>
+  </body>
+</html>

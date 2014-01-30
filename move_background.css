@@ -1,0 +1,61 @@
+body{
+  font-family: "Verdana"
+}
+
+body > section, body > div.section {
+  z-index: 0;
+  min-width: 1000px;
+  position: relative;
+}
+
+body h2{
+  color: white;
+
+}
+
+/* plugin attr */
+.section-reference{
+  width: 100%;
+  height: 700px; 
+  margin: 30px 0px;
+  overflow: hidden;
+}
+
+div.section-to-move{
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+
+
+/*custom attr*/
+#background, #background2{
+  background: #FA3F20;
+  width: 100%;
+  height: 700px;
+  background: url("images/background.jpg") no-repeat scroll 0 0 transparent;
+  border: 2px solid red;
+  text-align: center;
+}
+
+#background2{
+  background-size: 120%;
+  left: -5%;
+  width: 120%;
+}
+
+
+#section_to_move1, #section_to_move2, #section_to_move3, #section_to_move4{
+  background: url("images/social-image.png") no-repeat scroll 50% 50% transparent;
+  width: 100%;
+  top: -500px; /* adjust this for your images*/
+  height: 400px;
+  text-align: center;
+  border: 1px solid orange;
+}
+
+div.some-class{
+  height: 100%;
+  width: 65%;
+}
